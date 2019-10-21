@@ -3,7 +3,7 @@
   box-sizing: border-box;
 }
 
-#htt {font-family:Helvetica, sans-serif;font-size:18px;font-style:italic;font-weight:normal;color:#000000;background-color:yellow;}
+#htt {font-family:Helvetica, sans-serif;font-size:18px;font-style:italic;font-weight:normal;color:#000000;}
 
 #onlypara {
   font-family:Helvetica, sans-serif;
@@ -172,7 +172,7 @@ h1 {
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 250px) {
   .column {
-    width: 98%;
+    width: 100%;
   }
 }
 
