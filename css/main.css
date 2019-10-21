@@ -1,47 +1,179 @@
-/**
-Sample css code
-*/
-/* Set height to 100% for body and html to enable the background image to cover the whole page: */
-body,
-html {
-  height: 100%;
+<style>
+* {
+  box-sizing: border-box;
 }
 
-/*Set background image*/
-.container {
-  background-image: url('https://doc-10-ao-docs.googleusercontent.com/docs/securesc/ha0ro937gcuc7l7deffksulhg5h7mbp1/r085o9ungppbiokopob2sfbekae4uqbb/1537920000000/14802840322886517493/*/110cT8sl-pOiHGgj9yToPkAqAzrr-RNfb');
-  height: 100%;
-  background-position: center;
-  background-size: cover;
+#htt {font-family:Helvetica, sans-serif;font-size:18px;font-style:italic;font-weight:normal;color:#000000;background-color:yellow;}
+
+#onlypara {
+  font-family:Helvetica, sans-serif;
+  font-size:10px;
+  font-style:italic;
+  font-weight:normal;
+  color:#000000;
+  background-color:#ffffff;
 }
 
-/* Position text in the middle */
-.middle {
-  position: absolute;
-  color: beige;
-  top: 70%;
-  left: 39%;
-  text-align: center;
-  font-size: 25px;
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 96%;
+  right:2;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
 }
 
-/*Set circle in unordered list*/
-.middle ul {
-  list-style-type: circle;
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
-/*Set text inside li tag to left*/
-.middle ul li {
-  text-align: left !important;
-}
-
-/*Set text color for a tag inside middle class and ul>li element*/
-.middle ul li a {
-  color: beige;
-}
-
-/*Change text color and decoration for a tags inside middle class and ul>li element*/
-.middle ul li a:hover {
-  color: red;
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
   text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block
 }
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+
+#college {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 15px 15px;
+  font-size: 25px;
+  width: 100%;
+}
+
+#footnote {
+  background-color: #555;
+  color: white;
+  float: right;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 10px;
+  font-size: 15px;
+  width: 10%;
+}
+
+#footnote1 {
+  background-color: #ffffff;
+  color: black;
+  float: right;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px 10px;
+  font-size: 15px;
+  width: 10%;
+}
+
+footer {
+   position: fixed;
+   bottom : 0;
+   width: 98%;
+   background-color: #555;
+   color: white;
+   padding: 6px 6px 6px 6px;
+   font-size: 12px;
+   text-align: center;
+}
+
+table.GeneratedTable {
+  width: 100%;
+  background-color: #ffffff;
+  border-collapse: collapse;
+  border-width: 1px;
+  border-color: #555;
+  border-style: groove ;
+  color: #000000;
+}
+
+table.GeneratedTable td, table.GeneratedTable th {
+  border-width: 1px;
+  border-color: #555;
+  border-style: groove ;
+  padding: 3px;
+}
+
+table.GeneratedTable thead {
+  background-color: #555;
+  color : white;
+  font-size: 20px;
+}
+
+body {
+  background-color: #f1f1f1;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  width: 98%;
+  /*margin: auto;*/
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 10px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 30%;
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 8px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 250px) {
+  .column {
+    width: 98%;
+  }
+}
+
+</style>
